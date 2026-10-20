@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Wisdom Ezimah</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Wisdom.Dev</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <nav id="primaryNav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="planner.html" class="active">Academic Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2 style="color: var(--primary-color); margin-bottom: 0.5rem; text-align: center;">Academic Planner</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem; font-size: 0.95rem;">Manage your course assignments,
+                revisions, and project deadlines.</p>
+
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="taskInput">New Academic Task</label>
+                    <input type="text" id="taskInput" placeholder="e.g. Complete COS 106 Web Assignment">
+                    <small id="taskError" class="error-text"></small>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Add Task</button>
+            </form>
+
+            <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border-color);">
+
+            <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Active Tasks</h3>
+            <div id="taskList">
+                <!-- Tasks rendered dynamically via JS -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wisdom Chidozie Ezimah. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/planner.js"></script>
+</body>
+
+</html>
